@@ -1,13 +1,13 @@
 jQuery(document).ready(function ($) {
   $('#home-hover-trigger').mouseover(
     function() {
-      $('#home-hover').css('background-color', '#DDEDF6');
+      $('body').css('background-color', '#DDEDF6');
       $('#name').css('color', '#3996CE');
 
   });
   $('#home-hover-trigger').mouseout(
     function() {
-      $('#home-hover').css('background-color', '#FAFAFA');
+      $('body').css('background-color', '#FAFAFA');
       $('#name').css('color', 'black');
 
   });
