@@ -1,19 +1,40 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html, body {
-    width: 100%;
-    height: 100%;
-}
+// html, body {
+//     width: 100%;
+//     height: 100%;
+// }
 #portrait {
   height: 100%;
   width: auto;
   position: absolute;
-  right:75px;
+  right:90px;
   min-height: 500px;
   max-height: 800px;
   overflow: hidden;
 }
+
+@media (max-width: 991px) {
+ #portrait {
+   height: auto;
+   width: 100%;
+   position: relative;
+   right: 0;
+   min-height: none;
+   max-height: none;
+   overflow: visible;
+ }
+ #home-container {
+   height: auto;
+   max-width: none;
+   overflow-x: visible;
+   min-width: none;
+   padding-right: 0px;
+   margin-bottom: 20px;
+ }
+}
+
 #home-container {
   // background-color: red;
   height: 100%;
@@ -21,11 +42,11 @@ html, body {
   overflow-x: scroll;
   min-width: 300px;
   padding-right: 60px;
-
 }
 .header {
   margin-top: 85px;
   font-size: 30px;
+  line-height: 1.24;
 }
 .underline {
   position: absolute;
@@ -33,7 +54,7 @@ html, body {
   background-color: #a4bfce;
   bottom:100;
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 20px;
   z-index: -10;
 }
 #fullstack {
@@ -41,7 +62,7 @@ html, body {
   margin-left: -118px;
 }
 #ruby-on-rails {
-  width: 176px;
+  width: 174px;
   margin-left: -171px;
 }
 #ruby-on-rails-div {
@@ -50,4 +71,17 @@ html, body {
 }
 #design, #development {
   width: 190px;
+}
+#home-hover-trigger, #home-hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#home-hover-trigger {
+  z-index: 10;
+  padding-right: 200px;
+}
+#home-hover {
+  z-index: -100;
+  transition: background .2s ease;
 }
