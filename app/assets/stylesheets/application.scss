@@ -13,3 +13,58 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "pages";
+
+body{
+  font-family: "Lato";
+  background-color: #FAFAFA;
+}
+li {
+  list-style: none;
+}
+.nav-right {
+  right: 24px;
+  height: 155px;
+  bottom: 50%;
+  width: 90px;
+ }
+.navigation li {
+  margin-top: 68px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+#portfolio {
+  margin-bottom: 90px;
+}
+#name {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: -145px;
+  margin-bottom: 228px;
+  width: 400px;
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.web-design-developement {
+  font-size: 10px;
+  font-family: "Helvetica";
+  color: rgb(147, 147, 147);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 48.5px;
+  top: 37.414px;
+  width: 135px;
+  height: 9px;
+  z-index: 7;
+}
+#sidebar {
+  position: absolute;
+  height: 100%;
+  background-color: #FFFFFF;
+  width: 90px;
+  right: 0;
+}

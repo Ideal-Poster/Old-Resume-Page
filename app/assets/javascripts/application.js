@@ -16,3 +16,18 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require_tree .
+jQuery(document).ready(function ($) {
+
+
+    setInterval(function() {
+      if ($(window).width() < 992) {
+        $('#home-container').css('width', $(window).width());
+      }
+      else {
+        $('#home-container').css('width', ($(window).width() - $('#portrait').width() - 180));
+      }
+    }, 100);
+
+
+
+});
